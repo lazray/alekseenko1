@@ -1,4 +1,4 @@
-package ru.dvfu;
+package ru.dvfu.mrcpk.alekseenko.theme1;
 
 import java.util.Scanner;
 
