@@ -6,7 +6,23 @@ public abstract class Person {
 
     protected String  firstname, lastname, middlename, gender, email, phonenumber, addresses;
 
-    void addFhoneNumber
+    public Person(String firstname, String lastname, String middlename, String gender, String email, String phonenumber, String addresses) {
+        this.firstname = firstname;
+        this.lastname = lastname;
+        this.middlename = middlename;
+        this.gender = gender;
+        this.email = email;
+        this.phonenumber = phonenumber;
+        this.addresses = addresses;
+    }
+
+    Person(String firstname, String lastname, String middlename) {
+
+    }
+
+    void addFhoneNumber(){}
+
+    System.out.println( "Введите номер телефона" )
 
 
 }

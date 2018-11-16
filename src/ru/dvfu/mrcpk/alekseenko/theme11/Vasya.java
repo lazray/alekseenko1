@@ -4,14 +4,15 @@ package ru.dvfu.mrcpk.alekseenko.theme11;
 
 // Определение типа объекта "Вася"
 
-    public class Vasya extends Person{
+    public class Vasya extends Person {
 
         // Данные в записной книжке
-       private String  firstname, lastname, middlename, gender, email, phonenumber, addresses;
+        private String firstname, lastname, middlename, gender, email, phonenumber, addresses;
 
 
         // Пустой конструктор
-        Vasya(){}
+        Vasya() {
+        }
 
 
         // Конструктор с заданием параметров
@@ -19,47 +20,37 @@ package ru.dvfu.mrcpk.alekseenko.theme11;
             this.firstname = firstname;
             this.lastname = lastname;
             this.middlename = middlename;
-
-
-
-
-        // Метод задания
-        void setFIO(String gender,  String email){
-            this.a = a1;
-            this.b = b1;
         }
 
-        @Override
-        void setParams(float[] params) {
-            this.a = params[0];
-            this.b = params[1];
+        public String getGender() {
+            return gender;
         }
 
-        // Метод отображения прямоугольника
-        @Override
-        void draw(){
-            System.out.println("Рисуем прямоугольник со сторонами:");
-            System.out.println("a = " + a + ", b = " + b);
-            System.out.println("в координатах (" + x + "," + y + ");" );
+        public String getEmail() {
+            return email;
         }
 
-        // Метод рассчета площади прямоугольника
-        float getSquare(){
-            return a * b;
+        public String getPhonenumber() {
+            return phonenumber;
         }
 
-        // Метод рассчета периметра прямоугольника
-        float getArea(){
-            return 2 * a + 2 * b;
+        public String getAddresses() {
+            return addresses;
         }
 
-        @Override
-        public String toString() {
-            return "Фигура: Прямоугольник со сторонами \n" +
-                    "a = " + a + ", b = " + b +"\n" +
-                    "в координатах (" + x + "," + y + ");" ;
+        public void setGender(String gender) {
+            this.gender = gender;
         }
 
+        public void setEmail(String email) {
+            this.email = email;
+        }
 
+        public void setPhonenumber(String phonenumber) {
+            this.phonenumber = phonenumber;
+        }
 
-}
+        public void setAddresses(String addresses) {
+            this.addresses = addresses;
+        }
+    }
